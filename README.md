@@ -28,9 +28,6 @@ This project uses YOLOv5, a state-of-the-art object detection model, to analyze 
 git clone https://github.com/yourusername/smart-drone-vision.git
 cd smart-drone-vision
 
-r
-Copy code
-
 2. **Set Up a Python Virtual Environment (Optional but Recommended)**
 
 - Create the virtual environment:
@@ -51,18 +48,14 @@ Copy code
 
 pip install -r requirements.txt
 
-markdown
-Copy code
-
 ### Configuration
 
 1. **Environment Variables**: Create a `.env` file in the project root directory with the following variables:
+
 DRONE_NAME=your_drone_name
 OUTPUT_DIR=output_videos
 STREAM_URL=rtmp://your_stream_url/live
 
-vbnet
-Copy code
 Replace the placeholder values with your actual drone name, desired output directory for saved videos, and the RTMP stream URL of your drone's video feed.
 
 2. **Model Selection**: The code defaults to using `yolov5s` for object detection. To use a different model variant, update the `model_name` variable in the script accordingly.
@@ -72,9 +65,6 @@ Replace the placeholder values with your actual drone name, desired output direc
 To start object detection on your drone's video stream, ensure your drone is streaming to the specified RTMP URL, then run:
 
 python object_detection.py
-
-css
-Copy code
 
 The script will process the video stream in real-time, display the annotated video, and save it to the specified output directory.
 
